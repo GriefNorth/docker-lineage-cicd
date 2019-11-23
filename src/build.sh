@@ -124,6 +124,8 @@ for branch in ${BRANCH_NAME//,/ }; do
         themuppets_branch=lineage-15.1
       elif [[ $branch =~ .*lineage-16\.0.* ]]; then
         themuppets_branch=lineage-16.0
+      elif [[ $branch =~ .*lineage-17\.0.* ]]; then
+      	themuppets_branch=lineage-17.0  
       else
         themuppets_branch=lineage-15.1
         echo ">> [$(date)] Can't find a matching branch on github.com/TheMuppets, using $themuppets_branch"
